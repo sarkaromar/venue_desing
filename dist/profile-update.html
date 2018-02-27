@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Venue Booking | Venue list</title>
+
+    <link rel="stylesheet" href="css/style.min.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/d36ff73a94.js"></script>
+    <!-- calender -->
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+        <div class="top-sec">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="logo">
+                    <a href="index.html">
+                        <!-- <h1>Venue Booking</h1> -->
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-nav">
+                    <ul>
+                        <li class="dropdown"><a href="#">Check List</a>
+                        <ul>                               
+                            <li><a  href="http://localhost/venue/root/hall-list/dhaka">Dhaka</a></li>
+                            <li><a  href="http://localhost/venue/root/hall-list/chittagong">Chittagong</a></li>                                         
+                            <li><a  href="http://localhost/venue/root/hall-list/sylhet">Sylhet</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="vendors.html">Vendors</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="signin.html">Sign in</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="sub-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>
+                                Venue Panel
+                            </h2>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+<!-- mainbody section -->
+    <section class="main-body">
+        <div class="venue-panel">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="user-sec">
+                            <div class="avater">
+                                <a href="#">
+                                    <img src="images/profile.jpg" alt="">
+                                </a>
+                                <div class="venue-user">
+                                    <h3>User name</h3>
+                                    <h4>ID: #0123456789</h4>
+                                </div>
+                                <div class="user-menu">
+                                    <ul>
+                                        <li><a href="venue-panel.html"><i class="fa fa-home"></i> Home</a></li>
+                                        <li><a href="profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                                        <li><a href="my-venue.html"><i class="fa fa-building"></i> My venue</a></li>
+                                        <li><a href="my-hall.html"><i class="fa fa-th-list"></i> My hall</a></li>
+                                        <li><a href="venue-add-panel.html"><i class="fa fa-plus"></i> ADD NEW Hall</a></li>
+                                        <li><a href="user-list.html"><i class="fa fa-users"></i> User list</a></li>
+                                        <li><a href="inbox.html"><i class="fa fa-inbox"></i> Inbox</a></li>
+                                        <li><a href="booking-manager.html"><i class="fa fa-calendar"></i> Bookign Manager</a></li>
+                                        <li><a href="settings.html"><i class="fa fa-cogs"></i> Account Settings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="offers">
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="user-body-sec grid">
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2  col-form-label">Profile picture</label>
+                                <div class="col-sm-2">
+                                    <img src="images/profile.jpg" alt="">
+                                    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="Change image">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2  col-form-label">Full Name</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your full name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Phone No</label>
+                                <div class="col-sm-6">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Emargency No</label>
+                                <div class="col-sm-6">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Full Address</label>
+                                <div class="col-md-2">
+                                        <select class="form-control" name="division" id="division">
+                                            <option value="#">Select division</option>
+                                            <option value="#">Dhaka</option>
+                                            <option value="#">Chittgong</option>
+                                            <option value="#">Sylhet</option>
+                                            <option value="#">Rajshahi</option>
+                                            <option value="#">Rangpur</option>
+                                            <option value="#">khulna</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control" name="location" id="location">
+                                            <option value="#">Select Location</option>
+                                            <option value="#">Dhanmondi</option>
+                                            <option value="#">Gulshan</option>
+                                            <option value="#">Uttara</option>
+                                            <option value="#">Banani</option>
+                                            <option value="#">Mirpur</option>
+                                            <option value="#">Mohammodpur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6"></div>
+                                    <br>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-4">
+                                        <br>
+                                        <textarea class="form-control" name="full address" id="" cols="30" rows="5"></textarea>
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">About yourself</label>
+                                <div class="col-sm-6">
+                                    <textarea class="form-control" name="full address" id="" cols="30" rows="6"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-2"></label>
+                                <div class="col-sm-6">
+                                    <a href="profile-update.html" class="btn btn-success"><i class="fa fa-pencil"></i> Update</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- footer section -->
+<footer>
+    <div class="footer-opt">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <h3>ABOUT US</h3>
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Neque illum soluta quis voluptatibus tenetur aspernatur. 
+                    Dolore et maxime numquam doloremque aut nihil commodi, laborum, sint incidunt, molestiae officiis necessitatibus ipsa!
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>FOR MORE INFO VISIT</h3>
+                <ul>
+                <li><a href="how-it-work.html">How it works</a></li>
+                <li><a href="site-map.html">Sitemap</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ads.html">Advertise</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>EXPLORE VENUES</h3>
+                <ul>
+                    <li><a href="#">Business Hall</a></li>
+                    <li><a href="#">Family Hall</a></li>
+                    <li><a href="#">Weding Hall</a></li>
+                    <li><a href="#">Party Hall</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>SUBSCRIBE</h3>
+                <p>
+                    Subscribe to our newsletter and stay up to date with the latest offers at venue
+                </p>
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter your email">
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">SUBSCRIBE</button>
+                </span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+                <p>&copy; copyright - 2017 | ALL Rights Reserved. <a href="#">Privacy Policy</a> <a href="#">Terms of Service</a></p>
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+  
+    <!-- custome js -->
+    <script src="js/main.js"></script>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendors/jquery/jquery.slim.min.js" ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    
+    <script src="vendors/js/bootstrap.min.js" ></script>
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel();
+      });
+    </script>
+    
+  </body>
+</html>
