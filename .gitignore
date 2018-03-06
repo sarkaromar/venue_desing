@@ -1,7 +1,3 @@
-app
 node_modules
 /nbproject/private/
 /backend/nbproject/private/
-gulpfile.js
-package.json
-package-lock.json
