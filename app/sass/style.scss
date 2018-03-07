@@ -116,7 +116,6 @@ $desktop-width: 1024px;
                 }
             }
           }
-          
       }
       &:hover ul{
         display: block;
@@ -705,7 +704,8 @@ span.or-sec p {
     .user-body-sec{
         background: #ffffff;
         padding: 15px;
-        min-height: -webkit-fill-available;
+        // min-height: -webkit-fill-available;
+        min-height: calc(100vh - 325px);
     }
     .user-menu{
         text-align: left;
@@ -803,7 +803,7 @@ span.or-sec p {
             color: #ffffff;
         }
         p{
-           color: #ffffff
+           color: #ffffff;
         }
     }
 }
@@ -1000,7 +1000,3 @@ footer{
 }
 
 // Vendors panel
-
-.vendor-sec{
-    
-}

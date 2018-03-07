@@ -560,7 +560,8 @@ span.or-sec p {
   .venue-panel .user-body-sec {
     background: #ffffff;
     padding: 15px;
-    min-height: -webkit-fill-available; }
+    min-height: -webkit-calc(100vh - 325px);
+    min-height: calc(100vh - 325px); }
   .venue-panel .user-menu {
     text-align: left; }
 

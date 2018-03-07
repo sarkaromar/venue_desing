@@ -6,14 +6,17 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "gulp": "^3.9.1",
+    "gulp-error-handle": "^1.0.0",
+    "gulp-sass-error": "^1.0.5",
     "gulp-watch": "^4.3.11"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp-auto-reload": "^0.1.0",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-coffee": "^3.0.2",
     "gulp-cssmin": "^0.2.0",
-    "gulp-plumber": "^1.1.0",
+    "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.1.1",
     "gulp-sass": "^3.1.0",

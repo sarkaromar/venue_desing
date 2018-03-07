@@ -8,11 +8,10 @@ var sass          = require('gulp-sass'),
     uglify        = require('gulp-uglify'),
     plumber       = require('gulp-plumber'),
     autoprefixer  = require('gulp-autoprefixer'),
-    cssmin       = require('gulp-cssmin'),
-    rename       = require('gulp-rename'),
+    cssmin        = require('gulp-cssmin'),
+    rename        = require('gulp-rename'),
     gulpIf        = require('gulp-if');
-
-
+  
     // task start
 
     gulp.task('browserSync', function() {
@@ -58,9 +57,10 @@ var sass          = require('gulp-sass'),
     // });
 
     gulp.task('vendors', function() {
-      // bootstrap
+      // bootstrap css
       gulp.src('node_modules/bootstrap/dist/**/*.min.css')
       .pipe(gulp.dest('dist/vendors'));
+      // bootstrap js
       gulp.src('node_modules/bootstrap/dist/**/*.min.js')
       .pipe(gulp.dest('dist/vendors'));
       //jquery
