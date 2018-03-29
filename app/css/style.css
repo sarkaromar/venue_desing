@@ -86,7 +86,7 @@ body {
     padding: 20px 10px;
     text-align: center;
     color: #ffffff;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 12px;
     text-transform: uppercase; }
     .top-nav a:hover {
@@ -154,11 +154,39 @@ span.or-sec p {
 .blog-details img {
   width: 100%; }
 
-.slider {
-  background: url("../images/banner.jpg") no-repeat center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  height: 50vh; }
+.slider .carousel-caption h2 {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 15px;
+  display: inline-block;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 100; }
+
+.slider .carousel-caption p {
+  padding: 5px 15px;
+  display: block;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 100; }
+
+.tab-search {
+  position: absolute;
+  top: -40px; }
+  .tab-search .nav-tabs {
+    border-bottom: 0px solid #ddd; }
+  .tab-search a.nav-link.active {
+    background: #e53935 !important;
+    border: 0px !important;
+    color: #fff; }
+  .tab-search a.nav-link {
+    background: rgba(229, 56, 53, 0.5) !important;
+    border: 0px !important;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
 
 .search-sec {
   position: relative;
@@ -196,7 +224,8 @@ span.or-sec p {
 .v-user {
   background: #e53935;
   padding: 30px 0;
-  color: #f0f0f0; }
+  color: #f0f0f0;
+  position: relative; }
   .v-user h3 {
     font-weight: bold; }
   .v-user .btn {
