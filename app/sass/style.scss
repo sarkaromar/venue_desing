@@ -35,6 +35,12 @@ $desktop-width: 1024px;
   }
 }
 
+.nav-item {
+    @include mobile {
+        width: 50%;
+    }
+}
+
 .top-sec{
     padding: 5px 0;
     position: absolute;
@@ -42,6 +48,9 @@ $desktop-width: 1024px;
     right: 0;
     background: #e53935;
     z-index: 999;
+    @include mobile {
+        position: relative;
+    }
 }
 .logo{
     a{
@@ -71,16 +80,32 @@ $desktop-width: 1024px;
             margin: 0px;
         }
     }
+
 }
+
+.res-bar{
+    display: none;
+    @include mobile {
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        color: #fff;
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+}
+
 .top-nav{
     float: right;
+    @include mobile {
+        display: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     ul{
         margin: 0;
         padding: 0;
         @include mobile {
-            position: absolute;
-            right: 0;
-            left: 0;
             text-align: center;
         }
     }
@@ -103,12 +128,20 @@ $desktop-width: 1024px;
             list-style: none;
             display: block;
             width: 150px;
+            @include mobile {
+                width: 100%;
+            }
             a{
                 display: block;
                 padding: 10px;
                 background: #e53935;
                 border-bottom: 1px solid #d00500;
                 text-align: right;
+                @include mobile {
+                    width: 100%;
+                    background: #862624;
+                    text-align: center;
+                }
               }
             &:last-child{
                 a{
@@ -122,6 +155,10 @@ $desktop-width: 1024px;
         position: absolute;
         right: 0;
         z-index: 99;
+        @include mobile {
+            position: relative;
+            text-align: center;
+        }
         }
     }
     a{
@@ -137,6 +174,12 @@ $desktop-width: 1024px;
             text-decoration: none;
             color: #cccccc;
            
+        }
+        @include mobile{
+            padding: 10px;
+            width: 100%;
+            background: rgba(178, 47, 43, 0.5);
+            border-bottom: 1px solid #e53935;
         }
     }
 }
@@ -232,9 +275,20 @@ span.or-sec p {
         }
     }
 }
+#myTabContent {
+    @include mobile {
+        border: 1px solid #ff6e6e;
+        padding: 15px;
+        border-top: 0;
+    }
+}
 .tab-search{
     position: absolute;
     top: -40px;
+    @include mobile {
+        position: relative;
+        top: 0;
+    }
     .nav-tabs {
         border-bottom: 0px solid #ddd;
     }
@@ -242,6 +296,10 @@ span.or-sec p {
         background: #e53935 !important;
         border: 0px !important;
         color: #fff;
+        @include mobile {
+            border: 1px solid #ff6e6e!important;
+            border-bottom: 0px !important;
+        }
     }
     a.nav-link {
         background: rgba(229, 56, 53, 0.5) !important;
@@ -251,6 +309,12 @@ span.or-sec p {
         text-align: center;
         color: #fff;
         text-transform: uppercase;
+        @include mobile {
+            background: #ff6e6e!important;
+            width: 100%;
+            border: 1px solid #ff6e6e!important;
+            color: #fff;
+        }
     }
 }
 .search-sec{
@@ -292,6 +356,19 @@ span.or-sec p {
         }
        
     }
+}
+.v-types {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.v-exp {
+    font-size: 16px;
+    margin: 0;
+}
+.v-address {
+    font-size: 14px;
+    padding-bottom: 0 !important;
 }
 
 .v-user{
