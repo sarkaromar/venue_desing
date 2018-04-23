@@ -14,6 +14,11 @@
     <script src="https://use.fontawesome.com/d36ff73a94.js"></script>
     <!-- calender -->
     <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <style>
+        #map {
+                height: 450px;
+            }
+    </style>
   </head>
   <body>
 <!-- header section -->
@@ -62,71 +67,103 @@
         <div class="contact-us">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9">
-                        <h3>Send your query</h3>
-                        <hr>
-                                    <form>
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
-                                            </div>
-                                        </div>
-                                            
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                            <div class="col-sm-6">
-                                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                            </div>
-                                        </div>
-                                          
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="inputEmail3" placeholder="Phone">
-                                            </div>
-                                        </div>
-                                              
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Address</label>
-                                            <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="inputEmail3" placeholder="Address">
-                                            </div>
-                                        </div>
+                    <div class="col-lg-6">
+                        <div class="contact-form">
+                            <h3>Send your query</h3>
 
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Query</label>
-                                            <div class="col-sm-10">
-                                                <textarea name="query" id="" cols="30" rows="10" class="form-control" placeholder="Query"></textarea>
-                                            </div>
-                                        </div>
-                                      <div class="form-group row">
-                                        <div class="col-sm-2"></div>
-                                        <div class="col-sm-10">
-                                          <button type="submit" class="btn btn-warning btn-lg"> Send </button>
-                                        </div>
-                                      </div>
-                                    </form>
-                    </div>
-                    <div class="col-lg-3">
-                        <h3>
-                            Direct contact
-                            </h3>
-                            <hr>
-                        <address>
-                                TIS Pvt. Ltd.
-                                Jayanagar 4th Block,
-                                Bangalore
-                                Phone: (+91) 7676 2020 33 ext: 10#
-                                Email:info@venuebooking.com
-                        </address>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Phone">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Address</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Address">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Query</label>
+                                    <div class="col-sm-10">
+                                        <textarea name="query" id="" cols="30" rows="10" class="form-control" placeholder="Query"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-warning btn-lg"> Send </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="contact-form">
+                                <h3>Direct contact</h3>
 
+                                <ul class="contact-list">
+                                    <li><em aria-hidden="true" class="fa fa-map-marker"></em>
+                                      <span>
+                                        <strong>Bangladesh</strong> : Planners Tower,<br>
+                                          Suite # 13, Level # 14, 
+                                          13/A, Sonargaon Road,<br>
+                                          Banglamotor, Dhaka</span>
+                                    </li>
+                                    <li><em aria-hidden="true" class="fa fa-map-marker"></em>
+                                      <span>
+                                          <strong>UK</strong> : 100 Mile End Road, London, E1 4UN, UK
+                                      </span>
+                                    </li>
+                                    <li><em aria-hidden="true" class="fa fa-map-marker"></em>
+                                      <span>
+                                          <strong>USA</strong> : Jamaica Street, Newyork, NY-11432, USA
+                                      </span>
+                                    </li>
+                                    <li><em aria-hidden="true" class="fa fa-phone"></em>
+                                      <span>
+                                          <strong>BD</strong>: +8801707011210<br>
+                                          <strong>BD</strong>: +8801707011310<br>
+                                          <strong>UK</strong>: +44(0)20 3633 1301
+                                      </span>
+                                    </li>
+                                    <li><em aria-hidden="true" class="fa fa-envelope"></em>
+                                      <span>BD : <a href="#">info@venue.com.bd</a></span><br>
+                                      <span>UK : <a href="#">info-uk@venue.com.bd</a></span><br>
+                                      <span>US : <a href="#">info-us@venue.com.bd</a></span>
+                                    </li>
+                                    <li>
+                                      <em aria-hidden="true" class="fa fa-link"></em><span><a href="http://venue.com.bd/">venue.com.bd</a></span>
+                                    </li>
+                                  </ul>
+                                
+                            </div>
                     </div>
                 </div>
+
             </div>
         </div>
+
     </section>
 
+    <div id="map"></div>
 
 <!-- footer section -->
 <footer>
@@ -190,11 +227,11 @@
 </footer>
   
 
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="vendors/jquery/jquery.min.js" ></script>
     <!-- custome js -->
     <script src="js/main.js"></script>
     
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="vendors/jquery/jquery.slim.min.js" ></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     
@@ -204,6 +241,123 @@
         $('.carousel').carousel();
       });
     </script>
+<script>
+      function initMap() {
+        // Styles a map in night mode.
+        var uluru = {lat: 23.7467831, lng: 90.3930449};
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading"><img width="50" src="http://venue.com.bd/assets/images/favicon.png"> Venue.com.bd</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Venue.com.bd</b>, VENUE.com.bd is revolutionizing the way people think about event booking. Our platform lets venues, vendors and bookers plan together, creating a smarter and better-connected experience for all.</p>'+
+            '<p>Attribution: Venue.com.bd, <a href="https://cloudnextbd.com/">'+
+            'Cloud Next Ltd.</a> '+
+            '</div>'+
+            '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru,
+            mapTypeId: 'roadmap',
+            icon: 'http://venue.com.bd/assets/images/favicon.png',
+            styles: [
+                {elementType: 'geometry', stylers: [{color: '#efdbdb'}]},
+                {elementType: 'labels.text.stroke', stylers: [{color: '#'}]},
+                {elementType: 'labels.text.fill', stylers: [{color: '#000000'}]},
+                {
+                featureType: 'administrative.locality',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#D50000'}]
+                },
+                {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#d59563'}]
+                },
+                {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [{color: '#81C784'}]
+                },
+                {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#6b9a76'}]
+                },
+                {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{color: '#dc3635'}]
+                },
+                {
+                featureType: 'road',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#81C784'}]
+                },
+                {
+                featureType: 'road',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#9ca5b3'}]
+                },
+                {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{color: '#D50000'}]
+                },
+                {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#81C784'}]
+                },
+                {
+                featureType: 'road.highway',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#f3d19c'}]
+                },
+                {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [{color: '#2f3948'}]
+                },
+                {
+                featureType: 'transit.station',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#d59563'}]
+                },
+                {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [{color: '#4FC3F7'}]
+                },
+                {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#515c6d'}]
+                },
+                {
+                featureType: 'water',
+                elementType: 'labels.text.stroke',
+                stylers: [{color: '#17263c'}]
+                }
+            ]
+            });
+
+            var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title: 'Venue.com.bd'
+            });
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+      }
+    </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDANxCbXZOI5RESIHd4wKiqO9mMa26bnn0&callback=initMap"
+        async defer></script>
     
   </body>
 </html>

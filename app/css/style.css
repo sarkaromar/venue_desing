@@ -16,7 +16,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  background: #e53935;
+  background: #D50000;
   z-index: 999; }
   @media (max-width: 767px) {
     .top-sec {
@@ -93,7 +93,7 @@ body {
       .top-nav .dropdown ul li a {
         display: block;
         padding: 10px;
-        background: #e53935;
+        background: #D50000;
         border-bottom: 1px solid #d00500;
         text-align: right; }
         @media (max-width: 767px) {
@@ -128,8 +128,8 @@ body {
       .top-nav a {
         padding: 10px;
         width: 100%;
-        background: rgba(178, 47, 43, 0.5);
-        border-bottom: 1px solid #e53935; } }
+        background: #B71C1C;
+        border-bottom: 1px solid #D50000; } }
 
 header .sub-header {
   background: url("../images/banner.jpg") no-repeat center;
@@ -139,7 +139,8 @@ header .sub-header {
   header .sub-header h2 {
     color: #ffffff;
     text-shadow: 1px 1px 2px #000000;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 900; }
 
 span.or-sec p {
   border: 1px solid;
@@ -193,7 +194,7 @@ span.or-sec p {
   width: 100%; }
 
 .slider .carousel-caption h2 {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(213, 0, 0, 0.3);
   padding: 5px 15px;
   display: inline-block;
   font-size: 42px;
@@ -223,7 +224,7 @@ span.or-sec p {
   .tab-search .nav-tabs {
     border-bottom: 0px solid #ddd; }
   .tab-search a.nav-link.active {
-    background: #e53935 !important;
+    background: #D50000 !important;
     border: 0px !important;
     color: #fff; }
     @media (max-width: 767px) {
@@ -261,14 +262,14 @@ span.or-sec p {
   .search-sec a.search-b {
     text-decoration: none; }
   .search-sec .search-i {
-    border: 1px solid #e53935;
+    border: 1px solid #D50000;
     -webkit-border-radius: 0px;
     border-radius: 0px;
     background: rgba(255, 255, 255, 0.25); }
     .search-sec .search-i:focus {
-      border: 1px solid #e53935; }
+      border: 1px solid #D50000; }
   .search-sec .search-b {
-    background: #e53935;
+    background: #D50000;
     color: #ffffff;
     font-size: 20px;
     font-weight: 100;
@@ -293,7 +294,7 @@ span.or-sec p {
   padding-bottom: 0 !important; }
 
 .v-user {
-  background: #e53935;
+  background: #D50000;
   padding: 30px 0;
   color: #f0f0f0;
   position: relative; }
@@ -314,7 +315,7 @@ span.or-sec p {
     height: 41px !important; }
 
 .top-sec-sub {
-  background: #e53935; }
+  background: #D50000; }
 
 .filters {
   background: #f6f6f6;
@@ -533,7 +534,7 @@ span.or-sec p {
     background: #f6f6f6;
     margin: 5px; }
     .venue-details li .fa {
-      background: #e53935;
+      background: #D50000;
       width: 25px;
       text-align: center;
       padding: 6px;
@@ -611,14 +612,14 @@ span.or-sec p {
   background: -webkit-linear-gradient(top, #ff6e6e 0%, #e53935 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#ff6e6e), to(#e53935));
   background: linear-gradient(to bottom, #ff6e6e 0%, #e53935 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e6e', endColorstr='#e53935', GradientType=0 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e6e', endColorstr='#D50000', GradientType=0 ); }
 
 .log-up {
   padding: 20px;
   margin: 50px 0; }
 
 .venue-panel {
-  background: #e53935;
+  background: #D50000;
   padding: 50px 0; }
   .venue-panel .user-sec {
     text-align: center;
@@ -693,7 +694,7 @@ span.or-sec p {
 .divi {
   height: 1px;
   width: 300px;
-  background: #e53935;
+  background: #D50000;
   display: inherit;
   margin: 0 auto;
   margin-bottom: 25px; }
@@ -708,7 +709,7 @@ span.or-sec p {
   .main-body .discover img {
     width: 120px;
     height: 120px;
-    border: 1px solid #e53935;
+    border: 1px solid #D50000;
     -webkit-border-radius: 100%;
     border-radius: 100%; }
   .main-body .discover h3 {
@@ -730,7 +731,7 @@ span.or-sec p {
   .options .opt img {
     width: 100px;
     height: 100px;
-    border: 1px solid #e53935;
+    border: 1px solid #D50000;
     -webkit-border-radius: 100%;
     border-radius: 100%;
     color: #ffffff; }
@@ -767,8 +768,6 @@ span.or-sec p {
     width: 100%; }
     .brand-slider #carouselExampleControls .carousel-item {
       padding: 15px; }
-      .brand-slider #carouselExampleControls .carousel-item img {
-        width: 100%; }
 
 .login-form {
   padding: 15px;
@@ -835,7 +834,7 @@ footer {
   margin-bottom: 15px; }
   .grid .grid-item a {
     display: block;
-    background: #e53935;
+    background: #D50000;
     padding: 15px;
     color: #fff;
     text-align: center;
@@ -870,7 +869,7 @@ footer {
       top: -2px;
       right: 20px;
       background: #fff;
-      color: #e53935;
+      color: #D50000;
       font-weight: bold;
       -webkit-box-shadow: 2px 2px 0px #ccc;
       box-shadow: 2px 2px 0px #ccc; }
@@ -898,3 +897,85 @@ footer {
       .manage-nav ul li a:hover {
         background: #dddddd;
         color: #000; }
+
+.brand-slider img {
+  padding: 15px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%; }
+
+.card-title {
+  font-size: 17px;
+  min-height: 38px; }
+
+.top-sec-sub {
+  padding: 5px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #D50000;
+  z-index: 999; }
+
+.contact-form {
+  border: 1px solid rgba(213, 0, 0, 0.5); }
+
+.contact-form h3 {
+  background: rgba(213, 0, 0, 0.5);
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 0; }
+
+.contact-form .contact-list, .contact-form form {
+  padding: 15px; }
+
+ul.contact-list li .fa {
+  color: #d50000 !important;
+  font-size: 22px;
+  display: block; }
+
+ul.contact-list li {
+  list-style: none;
+  margin-bottom: 15.6px; }
+
+ul.contact-list {
+  margin: 0; }
+
+.form-control {
+  border: 1px solid #ea7f7f !important; }
+
+.social-icon {
+  margin-top: 15px; }
+  .social-icon ul {
+    margin: 0;
+    padding: 0; }
+    .social-icon ul li {
+      list-style: none;
+      margin-right: 5px;
+      padding: 0;
+      float: left; }
+      .social-icon ul li a {
+        display: block;
+        font-size: 22px;
+        padding: 5px;
+        background: #000000;
+        width: 45px;
+        text-align: center; }
+        .social-icon ul li a:hover {
+          color: #fff;
+          background: #B71C1C; }
+
+.feature-venue {
+  background: url("../images/feature-venue.jpg") no-repeat center fixed;
+  padding: 75px 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center; }
+  .feature-venue h2 {
+    color: #fff; }
+  .feature-venue img {
+    width: 100%; }
+  .feature-venue a {
+    margin-top: 25px; }
