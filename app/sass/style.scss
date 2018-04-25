@@ -172,7 +172,6 @@ $desktop-width: 1024px;
         &:hover{
             text-decoration: none;
             color: #cccccc;
-           
         }
         @include mobile{
             padding: 10px;
@@ -195,6 +194,118 @@ header{
         }
     }
 }
+
+// Venue hall list details start
+.venue-sub-hall{
+    .hall-list-show {
+        background: #fff;
+        padding: 10px;
+        margin-top: 2px;
+        .btn {
+            margin-top: 10px;
+        }
+        h3 {
+            font-weight: 100 !important;
+        }
+    }
+}
+.venue-logo{
+    img{
+        width: 100%;
+    }
+}
+.venue-name{
+    padding: 10px 0;
+    margin: 0;
+}
+.venue-profile-details-page{
+    .venue-logo{
+    }
+    .venue-left-panel{
+        .venue-left-contact{
+            background: #d50000;
+            color: #fff;
+            padding: 15px;
+            max-height: 52px !important;
+            text-align: center;
+            h5{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .venue-left-opt{
+            background: #f6f6f6;
+            padding: 15px;
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
+            i.fa {
+                padding: 6px;
+                width: 32px;
+                background: #d50000;
+                text-align: center;
+                color: #fff;
+            }
+            h3.opt-title {
+                text-transform: uppercase;
+                font-size: 18px;
+                padding: 7px 10px;
+                background: #d50000;
+                color: #fff;
+            }
+            .fecilitys{
+                li {
+                    margin: 3px 1px 2px 0px;
+                    background: rgba(213,0,0,.25);
+                    width: 49%;
+                    display: inline-block;
+                    &:hover{
+                        background: #D50000;
+                        color: #fff;
+                    }
+                } 
+            }
+        }
+    }
+    .venue-name{
+    }
+    div#myTabContent {
+        padding: 15px 0;
+    }
+    ul#myTab {
+        background: rgba(183, 28, 28, 0.75);
+    }
+    a.nav-link {
+        border-radius: 0px;
+        color: #fff !important;
+        border: 0px;
+        padding: 14px 25px;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    a.nav-link.active {
+        padding: 14px 25px;
+        border-radius: 0px;
+        background:  #d50000 !important;
+        color: #fff !important;
+        border: 0px;
+    }
+    a.nav-link:hover {
+        background:  rgba(183, 28, 28, 0.5) !important;
+    }
+    .tab-body-opt{
+        position: relative;
+        top: -75px;
+    }
+    .nav-tabs{
+        border-bottom: 0 !important;
+    }
+}
+
+// Venue hall list details end
+
 span.or-sec p {
     border: 1px solid;
     border-radius: 100%;
@@ -946,12 +1057,28 @@ span.or-sec p {
 .brand-slider{
     background: #f0f0f0;
     padding: 15px 0;
+    @include mobile{
+        padding: 30px 0;
+    }
     #carouselExampleControls{
         width: 100%;
+        .carousel-inner{
+            overflow: inherit !important;
+        }
         .carousel-item{
             padding: 15px;
+            @include mobile{
+                padding: 0;
+            }
             img{
-                
+                padding:15px;
+                background:#fff;
+                border-radius:5px; 
+                width: 100%;
+                @include mobile{
+                    padding: 0;
+                    transform: scale(1.5);
+                }
             }
         }
     }
@@ -1112,7 +1239,6 @@ footer{
     }
 }
 
-.brand-slider img{padding:15px;background:#fff;border-radius:5px; width: 100%;}
 .card-title{font-size:17px;min-height:38px}
 .top-sec-sub{padding:5px 0;position:absolute;left:0;right:0;background:#D50000;z-index:999}
 .contact-form{border:1px solid rgba(213,0,0,.5)}

@@ -142,6 +142,91 @@ header .sub-header {
     text-transform: uppercase;
     font-weight: 900; }
 
+.venue-sub-hall .hall-list-show {
+  background: #fff;
+  padding: 10px;
+  margin-top: 2px; }
+  .venue-sub-hall .hall-list-show .btn {
+    margin-top: 10px; }
+  .venue-sub-hall .hall-list-show h3 {
+    font-weight: 100 !important; }
+
+.venue-logo img {
+  width: 100%; }
+
+.venue-name {
+  padding: 10px 0;
+  margin: 0; }
+
+.venue-profile-details-page .venue-left-panel .venue-left-contact {
+  background: #d50000;
+  color: #fff;
+  padding: 15px;
+  max-height: 52px !important;
+  text-align: center; }
+  .venue-profile-details-page .venue-left-panel .venue-left-contact h5 {
+    margin: 0;
+    padding: 0; }
+
+.venue-profile-details-page .venue-left-panel .venue-left-opt {
+  background: #f6f6f6;
+  padding: 15px; }
+  .venue-profile-details-page .venue-left-panel .venue-left-opt ul li {
+    list-style: none; }
+  .venue-profile-details-page .venue-left-panel .venue-left-opt i.fa {
+    padding: 6px;
+    width: 32px;
+    background: #d50000;
+    text-align: center;
+    color: #fff; }
+  .venue-profile-details-page .venue-left-panel .venue-left-opt h3.opt-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 7px 10px;
+    background: #d50000;
+    color: #fff; }
+  .venue-profile-details-page .venue-left-panel .venue-left-opt .fecilitys li {
+    margin: 3px 1px 2px 0px;
+    background: rgba(213, 0, 0, 0.25);
+    width: 49%;
+    display: inline-block; }
+    .venue-profile-details-page .venue-left-panel .venue-left-opt .fecilitys li:hover {
+      background: #D50000;
+      color: #fff; }
+
+.venue-profile-details-page div#myTabContent {
+  padding: 15px 0; }
+
+.venue-profile-details-page ul#myTab {
+  background: rgba(183, 28, 28, 0.75); }
+
+.venue-profile-details-page a.nav-link {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  color: #fff !important;
+  border: 0px;
+  padding: 14px 25px;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.venue-profile-details-page a.nav-link.active {
+  padding: 14px 25px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #d50000 !important;
+  color: #fff !important;
+  border: 0px; }
+
+.venue-profile-details-page a.nav-link:hover {
+  background: rgba(183, 28, 28, 0.5) !important; }
+
+.venue-profile-details-page .tab-body-opt {
+  position: relative;
+  top: -75px; }
+
+.venue-profile-details-page .nav-tabs {
+  border-bottom: 0 !important; }
+
 span.or-sec p {
   border: 1px solid;
   -webkit-border-radius: 100%;
@@ -764,10 +849,30 @@ span.or-sec p {
 .brand-slider {
   background: #f0f0f0;
   padding: 15px 0; }
+  @media (max-width: 767px) {
+    .brand-slider {
+      padding: 30px 0; } }
   .brand-slider #carouselExampleControls {
     width: 100%; }
+    .brand-slider #carouselExampleControls .carousel-inner {
+      overflow: inherit !important; }
     .brand-slider #carouselExampleControls .carousel-item {
       padding: 15px; }
+      @media (max-width: 767px) {
+        .brand-slider #carouselExampleControls .carousel-item {
+          padding: 0; } }
+      .brand-slider #carouselExampleControls .carousel-item img {
+        padding: 15px;
+        background: #fff;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        width: 100%; }
+        @media (max-width: 767px) {
+          .brand-slider #carouselExampleControls .carousel-item img {
+            padding: 0;
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            transform: scale(1.5); } }
 
 .login-form {
   padding: 15px;
@@ -897,13 +1002,6 @@ footer {
       .manage-nav ul li a:hover {
         background: #dddddd;
         color: #000; }
-
-.brand-slider img {
-  padding: 15px;
-  background: #fff;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  width: 100%; }
 
 .card-title {
   font-size: 17px;
