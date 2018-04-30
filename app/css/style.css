@@ -293,6 +293,15 @@ span.or-sec p {
   text-transform: uppercase;
   font-weight: 100; }
 
+.gallery-opt {
+  padding: 0px;
+  margin: 0; }
+  .gallery-opt li {
+    list-style: none;
+    float: left;
+    width: 238px;
+    margin: 0px 5px 5px 0px; }
+
 @media (max-width: 767px) {
   #myTabContent {
     border: 1px solid #ff6e6e;

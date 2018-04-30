@@ -386,6 +386,18 @@ span.or-sec p {
         }
     }
 }
+
+.gallery-opt {
+    padding: 0px;
+    margin: 0;
+    li {
+        list-style: none;
+        float: left;
+        width: 238px;
+        margin: 0px 5px 5px 0px;
+    }
+}
+
 #myTabContent {
     @include mobile {
         border: 1px solid #ff6e6e;
