@@ -457,13 +457,61 @@ span.or-sec p {
 .clear-fix{
     clear: both;
 }
+.contact-sec {
+    background: #d50000;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    table{
+        width: 100%;
+    }
+}
+.rating-sec{
+    i.fa{
+        color: #d50000;
+    }
+    .review {
+        margin: 15px 0;
+        background: #f6f6f6;
+        padding: 10px;
+        .replay-count{
+            float: right;
+        }
+    }
+    i{
+        float: right;
+    }
+    img{
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #f6f6f6;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 100;
+        margin: 0px;
+        padding-bottom: 4px;
+    }
+    .name{
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding: 0;
+        font-weight: 400 !important;
+    }
+    .replay{
+        .row {
+            margin-bottom: 15px;
+        }
+    } 
+}
 .vendors-profile-details-page{
     background: #f6f6f6;
     .vendors{
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         h3 {
-            background: #fff;
+            background: #e9ecef;
             font-size: 20px;
             text-transform: uppercase;
             padding: 7px 10px;

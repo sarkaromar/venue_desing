@@ -354,13 +354,56 @@ span.or-sec p {
 .clear-fix {
   clear: both; }
 
+.contact-sec {
+  background: #d50000;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700; }
+  .contact-sec table {
+    width: 100%; }
+
+.rating-sec i.fa {
+  color: #d50000; }
+
+.rating-sec .review {
+  margin: 15px 0;
+  background: #f6f6f6;
+  padding: 10px; }
+  .rating-sec .review .replay-count {
+    float: right; }
+
+.rating-sec i {
+  float: right; }
+
+.rating-sec img {
+  width: 100%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #f6f6f6; }
+
+.rating-sec p {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 0px;
+  padding-bottom: 4px; }
+
+.rating-sec .name {
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding: 0;
+  font-weight: 400 !important; }
+
+.rating-sec .replay .row {
+  margin-bottom: 15px; }
+
 .vendors-profile-details-page {
   background: #f6f6f6; }
   .vendors-profile-details-page .vendors {
-    margin-top: 15px;
-    margin-bottom: 15px; }
+    margin-top: 30px;
+    margin-bottom: 30px; }
     .vendors-profile-details-page .vendors h3 {
-      background: #fff;
+      background: #e9ecef;
       font-size: 20px;
       text-transform: uppercase;
       padding: 7px 10px;
