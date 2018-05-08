@@ -194,6 +194,29 @@ header .sub-header {
       background: #D50000;
       color: #fff; }
 
+.venue-profile-details-page .venue-right-contact {
+  background: #d50000;
+  color: #fff;
+  padding: 15px;
+  max-height: 52px !important;
+  text-align: center; }
+  .venue-profile-details-page .venue-right-contact h5 {
+    margin: 0;
+    padding: 0; }
+
+.venue-profile-details-page .venue-right-con-sec {
+  padding: 15px;
+  background: #fbfbfb;
+  -webkit-box-shadow: -1px 1px 1px #eee;
+  box-shadow: -1px 1px 1px #eee; }
+
+.venue-profile-details-page .new-title-style {
+  font-size: 20px;
+  padding: 8px;
+  background: #f6f6f6;
+  -webkit-box-shadow: -1px 1px 1px #eee;
+  box-shadow: -1px 1px 1px #eee; }
+
 .venue-profile-details-page div#myTabContent {
   padding: 15px 0; }
 
@@ -205,12 +228,12 @@ header .sub-header {
   border-radius: 0px;
   color: #fff !important;
   border: 0px;
-  padding: 14px 25px;
+  padding: 14px 15px;
   text-transform: uppercase;
   font-size: 16px; }
 
 .venue-profile-details-page a.nav-link.active {
-  padding: 14px 25px;
+  padding: 14px 15px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background: #d50000 !important;
@@ -222,10 +245,21 @@ header .sub-header {
 
 .venue-profile-details-page .tab-body-opt {
   position: relative;
-  top: -75px; }
+  top: -76px; }
 
 .venue-profile-details-page .nav-tabs {
-  border-bottom: 0 !important; }
+  border-bottom: 1px solid #d50000 !important; }
+
+.v-facilies li {
+  list-style: none;
+  float: left;
+  padding-right: 15px;
+  font-size: 14px; }
+  .v-facilies li i.fa {
+    color: #d50000 !important; }
+
+.nav-tabs .nav-item {
+  margin-bottom: 0px; }
 
 span.or-sec p {
   border: 1px solid;
@@ -296,11 +330,8 @@ span.or-sec p {
 .gallery-opt {
   padding: 0px;
   margin: 0; }
-  .gallery-opt li {
-    list-style: none;
-    float: left;
-    width: 238px;
-    margin: 0px 5px 5px 0px; }
+  .gallery-opt img {
+    margin-bottom: 15px; }
 
 @media (max-width: 767px) {
   #myTabContent {
@@ -625,7 +656,8 @@ span.or-sec p {
     width: 100%; }
   .venue-list .venues h3 {
     margin: 0;
-    padding: 5px 0;
+    padding: 0;
+    padding-bottom: 5px;
     font-weight: bold;
     font-size: 20px; }
   .venue-list .venues p {
@@ -633,6 +665,8 @@ span.or-sec p {
     padding: 4px 0; }
   .venue-list .venues h4 {
     font-size: 12px;
+    padding: 3px 0;
+    margin: 0;
     font-weight: bold; }
   .venue-list .venues .btn {
     -webkit-border-radius: 0;

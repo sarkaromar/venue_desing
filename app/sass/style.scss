@@ -269,6 +269,30 @@ header{
             }
         }
     }
+    .venue-right-contact{
+        background: #d50000;
+        color: #fff;
+        padding: 15px;
+        max-height: 52px !important;
+        text-align: center;
+        h5{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .venue-right-con-sec {
+        padding: 15px;
+        background: #fbfbfb;
+        box-shadow: -1px 1px 1px #eee;
+        .rating-sec{
+        }
+    }
+    .new-title-style{
+        font-size: 20px;
+        padding: 8px;
+        background: #f6f6f6;
+        box-shadow: -1px 1px 1px #eee;
+    }
     .venue-name{
     }
     div#myTabContent {
@@ -281,12 +305,12 @@ header{
         border-radius: 0px;
         color: #fff !important;
         border: 0px;
-        padding: 14px 25px;
+        padding: 14px 15px;
         text-transform: uppercase;
         font-size: 16px;
     }
     a.nav-link.active {
-        padding: 14px 25px;
+        padding: 14px 15px;
         border-radius: 0px;
         background:  #d50000 !important;
         color: #fff !important;
@@ -297,13 +321,28 @@ header{
     }
     .tab-body-opt{
         position: relative;
-        top: -75px;
+        top: -76px;
     }
     .nav-tabs{
-        border-bottom: 0 !important;
+        border-bottom: 1px solid #d50000 !important;
     }
 }
 
+.v-facilies{
+    li{
+        list-style: none;
+        float: left;
+        padding-right: 15px;
+        font-size: 14px;
+        i.fa{
+            color: #d50000 !important;
+        }
+    }
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
+}
 // Venue hall list details end
 
 span.or-sec p {
@@ -390,11 +429,8 @@ span.or-sec p {
 .gallery-opt {
     padding: 0px;
     margin: 0;
-    li {
-        list-style: none;
-        float: left;
-        width: 238px;
-        margin: 0px 5px 5px 0px;
+    img{
+        margin-bottom: 15px;
     }
 }
 
@@ -789,7 +825,8 @@ span.or-sec p {
         }
         h3{
             margin: 0;
-            padding: 5px 0;
+            padding: 0;
+            padding-bottom: 5px;
             font-weight: bold;
             font-size: 20px;
         }
@@ -799,6 +836,8 @@ span.or-sec p {
         }
         h4{
             font-size: 12px;
+            padding: 3px 0;
+            margin: 0;
             font-weight: bold;
         }
         .btn{
