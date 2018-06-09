@@ -327,6 +327,11 @@ span.or-sec p {
   text-transform: uppercase;
   font-weight: 100; }
 
+.page-404 {
+  padding: 75px 0; }
+  .page-404 img {
+    width: 100%; }
+
 .gallery-opt {
   padding: 0px;
   margin: 0; }

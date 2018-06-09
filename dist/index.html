@@ -140,7 +140,7 @@
                 <a class="nav-link active" data-toggle="tab" href="#venuetype" aria-selected="true">Venue</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#eventtype" aria-selected="false">Event</a>
+                <a class="nav-link" data-toggle="tab" href="#eventtype" aria-selected="false">Vendors</a>
               </li>
             </ul>
           </div>
@@ -164,7 +164,7 @@
                         <option value="#">Other Occasion</option>
                     </select>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <label for="division">Division</label>
                     <select class="form-control" name="division" id="division">
                         <option value="#">Select division</option>
@@ -176,7 +176,7 @@
                         <option value="#">khulna</option>
                     </select>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <label for="location">City/District</label>
                     <select class="form-control" name="location" id="location">
                         <option value="#">Select Location</option>
@@ -213,21 +213,75 @@
                           <option value="#">More than 500</option>
                         </select>
                 </div>
-                <div class="col-md-2">
+              </div>
+              <div class="row">
+                
+                <div class="col-md-3">
+                  <label for="budget">Hall Rent</label>
+                  <select class="form-control" name="budget" id="budget">
+                      <option value="#">Estimated tk/per person</option>
+                      <option value="#">Below 300</option>
+
+                      <option value="#">300-450</option>
+
+                      <option value="#">450-600</option>
+
+                      <option value="#">600-750</option>
+
+                      <option value="#">750-900</option>
+
+                      <option value="#">900-1050</option>
+
+                      <option value="#">1050-1200</option>
+
+                      <option value="#">More than 1200</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-3">
+                  <label for="guest">Maximum Guest</label>
+                  <select class="form-control" name="guest" id="guest">
+                      <option value="#">Select Guests</option>
+                      <option value="#">Below 100</option>
+
+                      <option value="#">100-150</option>
+
+                      <option value="#">150-200</option>
+
+                      <option value="#">200-250</option>
+
+                      <option value="#">250-300</option>
+
+                      <option value="#">300-350</option>
+
+                      <option value="#">350-400</option>
+
+                      <option value="#">400-450</option>
+
+                      <option value="#">450-500</option>
+
+                      <option value="#">More than 500</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-3">
+                    
+                </div>
+                
+                <div class="col-md-3">
                     <button type="submit" class="home-continue btn btn-warning btn-block">Continue</button>
                 </div>
               </div>
-
-
             </form>
           </div>
           <div class="tab-pane fade show" id="eventtype">
             <form class="form" action="check-user.html">
               <div class="row">
                 <div class="col-md-3">
-                    <label for="type">Event Type</label>
+                    <label for="type">Vendor Type</label>
                     <select class="form-control" name="type" id="type">
-                        <option value="#">Select Event type</option>
+                        <option value="#">Select Vendor Type</option>
+                        <option value="#">Any</option>
                         <option value="#">Corporate Event</option>
                         <option value="#">Birthday Party</option>
                         <option value="#">Wedding</option>
@@ -241,6 +295,7 @@
                     <label for="division">Division</label>
                     <select class="form-control" name="division" id="division">
                         <option value="#">Select division</option>
+                        <option value="#">Any</option>
                         <option value="#">Dhaka</option>
                         <option value="#">Chittgong</option>
                         <option value="#">Sylhet</option>
@@ -250,9 +305,10 @@
                     </select>
                 </div>
                 <div class="col-md-3">
-                    <label for="location">Location</label>
+                    <label for="location">District</label>
                     <select class="form-control" name="location" id="location">
-                        <option value="#">Select Location</option>
+                        <option value="#">Select District</option>
+                        <option value="#">Any</option>
                         <option value="#">Dhanmondi</option>
                         <option value="#">Gulshan</option>
                         <option value="#">Uttara</option>
@@ -261,76 +317,32 @@
                         <option value="#">Mohammodpur</option>
                     </select>
                 </div>
+                
                 <div class="col-md-3">
-                    <label for="date">Date</label>
-                    <input class="form-control" type="date" id="date" name="date">
+                  <label for="budget">Maximum Budget</label>
+                  <select class="form-control" name="budget" id="budget">
+                      <option value="#">Estimated tk/per Day</option>
+                      <option value="#">Any</option>
+                      <option value="#">Below 300</option>
+
+                      <option value="#">300-450</option>
+
+                      <option value="#">450-600</option>
+
+                      <option value="#">600-750</option>
+
+                      <option value="#">750-900</option>
+
+                      <option value="#">900-1050</option>
+
+                      <option value="#">1050-1200</option>
+
+                      <option value="#">More than 1200</option>
+                    </select>
                 </div>
               </div>
               <div class="row">
-                
-                  <div class="col-md-3">
-                      <label for="time">Time slot</label>
-                      <!-- <input class="form-control" type="time" id="time" name="time"> -->
-                      <select class="form-control" name="location" id="location">
-                          <option value="#">Select Time slot</option>
-                          <option value="#">Morning - 7 am to 10 am</option>
-      
-                          <option value="#">Afternoon - 11 am to 3:30 pm</option>
-      
-                          <option value="#">Evening - 4 pm to 7 pm</option>
-      
-                          <option value="#">Late Evening - 7 pm to 11:30 pm</option>
-      
-                          <option value="#">Full Day - 9 am to 6:30 pm</option>
-                      </select>
-      
-                  </div>
-                  <div class="col-md-3">
-                      <label for="guest">Guest</label>
-                      <select class="form-control" name="guest" id="guest">
-                          <option value="#">Select Guests</option>
-                          <option value="#">Below 100</option>
-
-                          <option value="#">100-150</option>
-
-                          <option value="#">150-200</option>
-
-                          <option value="#">200-250</option>
-
-                          <option value="#">250-300</option>
-
-                          <option value="#">300-350</option>
-
-                          <option value="#">350-400</option>
-
-                          <option value="#">400-450</option>
-
-                          <option value="#">450-500</option>
-
-                          <option value="#">More than 500</option>
-                        </select>
-                  </div>
-                <div class="col-md-3">
-                    <label for="budget">Budget</label>
-                    <select class="form-control" name="budget" id="budget">
-                        <option value="#">Estimated tk/per person</option>
-                        <option value="#">Below 300</option>
-
-                        <option value="#">300-450</option>
-
-                        <option value="#">450-600</option>
-
-                        <option value="#">600-750</option>
-
-                        <option value="#">750-900</option>
-
-                        <option value="#">900-1050</option>
-
-                        <option value="#">1050-1200</option>
-
-                        <option value="#">More than 1200</option>
-                      </select>
-                </div>
+                <div class="col-lg-9"></div>
                 <div class="col-md-3">
                     <button type="submit" class="home-continue btn btn-warning btn-block">Continue</button>
                 </div>
@@ -473,7 +485,262 @@
         <a href="#" class="btn btn-danger btn-lg">Booking now</a>
       </div>
     </section>
-      
+
+    <section class="p-venue">
+      <div class="container">
+        <h2>Most Populer caterer in Dhaka</h2>
+        <span class="divi"></span>
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/brand/cater/1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Dhaka Flavoure</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/brand/cater/2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Cater's Plate</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/brand/cater/3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">FMCS Caterer</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/brand/cater/4.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Hasan Catering</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/brand/cater/3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">FMCS Caterer</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/brand/cater/4.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Hasan Catering</h4>
+                    </div>
+                </div>
+            </div>
+            
+                
+            
+          </div>
+      </div>
+    </section>
+
+    <section class="p-venue">
+      <div class="container">
+        <h2>Most Populer Decorator in Dhaka</h2>
+        <span class="divi"></span>
+        <div class="row">
+          
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/b1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">International Convention City Bashundhara</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/b2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Bangabandhu International Conference Center</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/b3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">RAOWA Convention Hall</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/b4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Sena Malancha Convention Hall</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/b3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">RAOWA Convention Hall</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/b4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Sena Malancha Convention Hall</h4>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+      </div>
+    </section>
+
+    <section class="p-venue">
+      <div class="container">
+        <h2>Most Populer Vendors in Dhaka</h2>
+        <span class="divi"></span>
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/v1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">International Convention City Bashundhara</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/v2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Bangabandhu International Conference Center</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/v3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">RAOWA Convention Hall</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/v4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Sena Malancha Convention Hall</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/v3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">RAOWA Convention Hall</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-lg-2">
+                <div class="card">
+                    <img class="card-img-top" src="images/v4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Sena Malancha Convention Hall</h4>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+      </div>
+    </section>
+
+
+    
+    <section class="feature-venue-area">
+        <div class="container">
+          <h2>Area we coverage</h2>
+          <br>
+          <br>
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="added-area">
+                    <ul>
+                      <li><a href="#">Ramna Model (রমনা)</a></li>
+                      <li><a href="#">Motijheel (মতিঝিল)</a></li>
+                      <li><a href="#">Kotwali (কোতোয়ালী)</a></li>
+                      <li><a href="#">Dhanmondi (ধানমন্ডি)</a></li>
+                      <li><a href="#">Mohammadpur (মোহাম্মদপুর)</a></li>
+                      <li><a href="#">Sutrapur (সুত্রাপুর)</a></li>
+                      <li><a href="#">Tejgaon Model (তেজগাঁও)</a></li>
+                      <li><a href="#">Gulshan (গুলশান)</a></li>
+                      <li><a href="#">Lalbagh (লালবাগ)</a></li>
+                      <li><a href="#">Mirpur (মিরপুর)</a></li>
+                      <li><a href="#">Pallabi (পল্লবী)</a></li>
+                      <li><a href="#">Sabujbag (সবুজবাগ)</a></li>
+                      <li><a href="#">Cantonment (ক্যান্টনমেন্ট)</a></li>
+                      <li><a href="#">Demra (ডেমরা)</a></li>
+                      <li><a href="#">Hazaribagh (হাজারীবাগ)</a></li>
+                      <li><a href="#">Shyampur (শ্যামপুর)</a></li>
+                      <li><a href="#">Badda (বাড্ডা)</a></li>
+                      <li><a href="#">Kafrul (কাফরুল)</a></li>
+                      <li><a href="#">Kamringir Char (কামরাঙ্গীর চর)</a></li>
+                      <li><a href="#">Khilgaon (খিলগাঁও)</a></li>
+                      <li><a href="#">Uttara Model (উত্তরা)</a></li>
+                      <li><a href="#">Shah Ali (শাহ আলী)</a></li>
+                      <li><a href="#">Biman Bandar (বিমান বন্দর)</a></li>
+                      <li><a href="#">Paltan Model (পল্টন)</a></li>
+                      <li><a href="#">Adabar (আদাবর)</a></li>
+                      <li><a href="#">Darus Salam (দারুস সালাম)</a></li>
+                      <li><a href="#">Uttarkhan (উত্তরখান)</a></li>
+                      <li><a href="#">Kamrangirchar (কামরাঙ্গীরচর)</a></li>
+                      <li><a href="#">Kadamtoli (কদমতলী)</a></li>
+                      <li><a href="#">Gendaria (গেন্ডারিয়া)</a></li>
+                      <li><a href="#">Chalkbazar (চকবাজার)</a></li>
+                      <li><a href="#">Tejgaon (তেজগাঁও)</a></li>
+                      <li><a href="#">Turag (তুরাগ)</a></li>
+                      <li><a href="#">Dakhinkhan (দক্ষিণখান)</a></li>
+                      <li><a href="#">Bangshal (বংশাল)</a></li>
+                      <li><a href="#">Bhashantek (ভাষানটেক)</a></li>
+                      <li><a href="#">Bhatara (ভাটারা)</a></li>
+                      <li><a href="#">Jatrabari (যাত্রাবাড়ী)</a></li>
+                      <li><a href="#">Rampura (রামপুরা)</a></li>
+                      <li><a href="#">Rupnagar (রূপনগর)</a></li>
+                      <li><a href="#">Sherebangla (শেরেবাংলা)</a></li>
+                      <li><a href="#">Shahjahanpur (শাহজাহানপুর)</a></li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+          <br>
+        </div>
+      </section>
+
+    
+
+<!--       
       <section class="brand-slider">
         <div class="container">
           <div class="row">
@@ -535,7 +802,7 @@
                 </div>             
           </div>
         </div>
-    </section>
+    </section> -->
 <!-- footer section -->
     <footer>
       <div class="footer-opt">
