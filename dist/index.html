@@ -3,6 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Venue Booking</title>
@@ -869,7 +870,6 @@
       </div>
     </footer>
 
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="vendors/jquery/jquery.min.js" ></script>
     <!-- custome js -->
@@ -881,8 +881,9 @@
 
     <script src="vendors/js/wow.min.js" ></script>
 
-    <script>
+    <script src="vendors/js/scroll.min.js" ></script>
 
+    <script>
       wow = new WOW(
       {
         animateClass: 'animated',
@@ -891,11 +892,15 @@
           console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
         }
       }
-    );
-    wow.init();
-      
+      );
+      wow.init();
+
       $(document).ready(function(){
         $('.carousel').carousel();
+      });
+
+      $(function() {
+        $('html').smoothScroll(500);
       });
 
     </script>

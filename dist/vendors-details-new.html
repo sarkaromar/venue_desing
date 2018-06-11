@@ -692,27 +692,32 @@
       </footer>
   
 
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="vendors/jquery/jquery.min.js" ></script>
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-      
-      <script src="vendors/js/bootstrap.min.js" ></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendors/jquery/jquery.min.js" ></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    
+    <script src="vendors/js/bootstrap.min.js" ></script>
+    <script src="vendors/js/scroll.min.js" ></script>
 
-      <!-- custome js -->
-      <script src="js/main.js"></script>
+    <!-- custome js -->
+    <script src="js/main.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
     <script>
-      $(document).ready(function(){
+    $(document).ready(function(){
         $('.carousel').carousel();
         $('.view-hall-list').click(function(){
             console.log("clicked to view hall list of this venue")
             $(this).slideToggle();
-        });
-      });
+    });
+    
+    });
+    $(function() {
+        $('html').smoothScroll(500);
+    });
     </script>
   </body>
 </html>

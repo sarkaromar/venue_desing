@@ -49,3 +49,19 @@
     padding-left: 15px;
     transition: all .5s;
 }
+.venue-left-contact h5 {
+    font-size: 16px;
+}
+.venue-right-contact h5 {
+    font-size: 16px;
+}
+.venue-profile-details-page .venue-right-contact {
+    padding: 18px 15px !important;
+}
+.venue-profile-details-page .venue-left-panel .venue-left-contact {
+    padding: 18px 15px !important;
+}
+ul.gallery-opt li {
+    list-style: none;
+    float: left;
+}
