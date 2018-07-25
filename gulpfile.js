@@ -24,8 +24,8 @@ var sass          = require('gulp-sass'),
 
     gulp.task('sass', function(){
       return gulp.src('app/sass/*.scss')
-        .pipe(sass())
         .pipe(plumber())
+        .pipe(sass())
         .pipe(autoprefixer({
           browsers: ['Android >= 2.1',
                      'Chrome >= 21',
