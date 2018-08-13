@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Headland+One|Noto+Serif');
 
 *{
     margin: 0;
@@ -23,7 +23,9 @@ body{
     }
 }
 
-
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Serif', serif !important;
+}
 
 // mixin
 
@@ -241,12 +243,18 @@ img.card-img-top {
             &:last-child{
                 border-right: 1px solid #eee;
             }
+            @include mobile {
+                width: 50%;
+            }
             a{
                 display: block;
                 padding: 30px 15px;
                 text-align: center;
                 color: #000;
                 transition: all ease .5s;
+                @include mobile {
+                    padding: 15px;
+                }
                 &:hover{
                     text-decoration: none;
                     text-shadow: 1px 1px 1px #333333;
@@ -280,6 +288,9 @@ img.card-img-top {
             list-style: none;
             float: left;
             width: calc(100% / 4);
+            @include mobile{
+                width: 100%;
+            }
             &:first-child{
                 a{
                     background: #ef5350;
@@ -343,7 +354,7 @@ img.card-img-top {
                     color: #fff;
                 }
                 h4{
-                    font-size: 22px;
+                    font-size: 20px;
                     color: #fff;
                 }
                 p{
@@ -982,17 +993,76 @@ span.or-sec p {
         width: 100% !important;
     }
 }
+.filter-sec {
+    padding: 15px 0;
+}
 .venue-list{
+    .card-highlight {
+        position: absolute;
+        z-index: 1;
+        background: rgba(255, 0, 0, 0.5);
+        height: 100px;
+        width: 100px;
+        border-radius: 0px 0px 100% 0px;
+        span{
+            padding: 25px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            display: block;
+        }
+        .fa-star{
+            color: #f0f0f0 !important;
+        }
+    }
+    .footer-sec{
+        padding: 15px;
+        padding-top: 0px;
+        .price{
+            font-size: 22px;
+            padding: 3px 0;
+            font-weight: bold;
+            color: #333333;
+        }
+    }
+    &:hover{
+        .venues{
+            background: #ccc !important;
+            .card-img{
+                opacity: .5;
+            }
+            .card-body{
+                a{
+
+                    color: #111;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
     .venues{
         background: #f6f6f6;
         box-shadow: .5px .5px 1px #dddddd;
-        padding: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         .fa{
             color: #777777;
         }
         img{
             width: 100%;
+        }
+        
+        .card-body{
+            a{
+                color: #333333;
+                text-decoration: none;
+            }
+            .rating{
+                font-weight: bold;
+                color: #666666;
+                .fa{
+                    color: red;
+                }
+            }
         }
         h3{
             margin: 0;
@@ -1004,6 +1074,7 @@ span.or-sec p {
         p{
             margin: 0;
             padding: 4px 0;
+            font-size: 13px;
         }
         h4{
             font-size: 12px;
@@ -1601,7 +1672,7 @@ footer{
     }
 }
 
-.card-title{font-size:17px;min-height:38px}
+.card-title{font-size:16px;min-height:38px}
 .top-sec-sub{padding:5px 0;position:absolute;left:0;right:0;background:#D50000;z-index:999}
 .contact-form{border:1px solid rgba(213,0,0,.5)}
 .contact-form h3{background:rgba(213,0,0,.5);padding:15px;color:#fff;text-transform:uppercase;font-size:22px;margin:0}
@@ -1654,6 +1725,9 @@ ul.contact-list{margin:0}
         width: 100%;
         border-radius: 20px 0;
         box-shadow: 1px 1px 4px #111;
+        @include mobile{
+            margin-bottom: 15px;
+        }
     }
     a{
         margin-top: 25px;
@@ -1709,13 +1783,14 @@ ul.contact-list{margin:0}
 .blog-in-home{
     padding: 100px 0;
     .blog-big{
+        margin-bottom: 15px;
         a{
             text-decoration: none;
         }
         h2{
-            font-size: 22px;
-            color: #444444;
-            text-transform: uppercase
+            font-size: 18px;
+            color: #444;
+            padding: 5px 0;
         }
         p{
             color: #333333;
@@ -1723,6 +1798,7 @@ ul.contact-list{margin:0}
         }
         img{
             border-radius: 5px;
+            width: 100%;
         }
     }
     .blog-small{
@@ -1738,9 +1814,8 @@ ul.contact-list{margin:0}
             text-decoration: none;
         }
         h2{
-            font-size: 20px;
+            font-size: 18px;
             color: #444444;
-            text-transform: uppercase;
             margin: 0;
             padding: 0;
         }

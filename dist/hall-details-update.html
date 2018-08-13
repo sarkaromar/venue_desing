@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Venue Booking | Venue list</title>
+
+    <link rel="stylesheet" href="css/style.min.css" >
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/d36ff73a94.js"></script>
+
+    
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+
+  </head>
+  <body>
+<!-- header section -->
+    <header>
+        <div class="top-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="logo">
+                        <a href="index.html">
+                            <!-- <h1>Venue Booking</h1> -->
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="top-nav">
+                            <ul>
+                                <li class="dropdown"><a href="#">Check List</a>
+                                <ul>                               
+                                    <li><a  href="http://localhost/venue/root/hall-list/dhaka">Dhaka</a></li>
+                                    <li><a  href="http://localhost/venue/root/hall-list/chittagong">Chittagong</a></li>                                         
+                                    <li><a  href="http://localhost/venue/root/hall-list/sylhet">Sylhet</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="vendors.html">Vendors</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="signin.html">Sign in</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-header venue-profile-details-page">
+            <div class="container-fluid">
+                <div class="row align-items-end">
+                    <div class="col-lg-3">
+                        <div class="venue-logo">
+                            <img src="images/b1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <h2 class="venue-name">Kandi Tree Banquet  <i class="fa fa-check-circle"></i></h2>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+
+    </header>
+
+<!-- mainbody section -->
+    <section class="main-body venue-profile-details-page">
+        <div class="container-fluid">
+            <br>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="venue-left-panel tab-body-opt">
+                        <div class="venue-left-contact">
+                            <!-- <h3 class="opt-title">Talk to Venue Manager</h3> -->
+                            <h5><i class="fa fa-phone"></i> Call now: 08030752877</h5>
+                        </div>
+                        <div class="venue-left-opt">
+                            <p><i class="fa fa-clock-o"></i> Open 7 Days a week 8.30AM to 11.00PM</p>
+                            <hr>
+                            <p><i class="fa fa-map-marker"></i> Jayanagar 4th Block, Dhaka, Bangladesh</p>
+                            <hr>
+                            <p><i class="fa fa-tag"></i>  Bachelor Party, <i class="fa fa-tag"></i>  Engagement, <i class="fa fa-tag"></i>  Birthday</p>
+                            
+                            <div class="fecilitys">
+                                <h3 class="opt-title">Venue Highlight</h3>
+                                <ul>
+                                    <li><i class="fa fa-car"></i> CAR Parking</li>
+                                    <li><i class="fa fa-snowflake-o" aria-hidden="true"></i> AC</li>
+                                    <li><i class="fa fa-university" aria-hidden="true"></i> Hall </li>
+                                    <li><i class="fa fa-cutlery" aria-hidden="true"></i> Food</li>
+                                    <li><i class="fa fa-glass" aria-hidden="true"></i> Bar</li>
+                                    <li><i class="fa fa-users"></i> 500</li>
+                                    <li><i class="fa fa-wheelchair" aria-hidden="true"></i> DA</li>
+                                    <li><i class="fa fa-wifi" aria-hidden="true"></i> WIFI</li>
+                                </ul>
+                            </div>
+                            <h3 class="opt-title">Location map</h3>
+                            <div class="location-map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14608.081990811654!2d90.3916616197754!3d23.746648450000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1524658385125" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tab-body-opt">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home">Hall List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#book">Pre-Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#gallery">Photo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#videos">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tnc">T&C</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="venue-details hall-details-sec">
+                                    <!-- <nav class="nav">
+                                        <a class="nav-link active" href="#packages">Packages</a>
+                                        <a class="nav-link" href="#facilities">Facilities</a>
+                                        <a class="nav-link" href="#capacity">Capacity</a>
+                                        <a class="nav-link" href="#food">Food</a>
+                                        <a class="nav-link" href="#technology">Technology</a>
+                                        <a class="nav-link" href="#about">About</a>
+                                        <a class="nav-link" href="#suited">Suited</a>
+                                        <a class="nav-link" href="#distance">Distance</a>
+                                        <a class="nav-link" href="#policies">Policies</a>
+                                        <a class="nav-link" href="#maps">Map</a>
+                                    </nav> -->
+                                    <div class="photos">
+                                        
+                                        <div id="slider">
+                                                <div id="myCarousel" class="carousel slide">
+                                                    <div class="carousel-inner">
+                                                        <div class="item carousel-item" data-slide-number="0">
+                                                            <img src="images/v1.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="1">
+                                                            <img src="images/v2.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="2">
+                                                            <img src="images/v3.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="3">
+                                                            <img src="images/v4.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item active" data-slide-number="4">
+                                                            <img src="images/v3.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="5">
+                                                            <img src="images/v2.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="6">
+                                                            <img src="images/v4.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="7">
+                                                            <img src="images/v1.png" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="8">
+                                                            <img src="images/v2.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="9">
+                                                            <img src="images/v3.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="10">
+                                                            <img src="images/v4.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="item carousel-item" data-slide-number="11">
+                                                            <img src="images/v2.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="slider-controler">
+                                                            <a class="carousel-control left pt-3" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                                            <a class="carousel-control right pt-3" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+                                
+                                                    </div>
+                                                    <!-- main slider carousel nav controls -->
+                                
+                                                    <ul class="carousel-indicators list-inline">
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
+                                                                <img src="images/v1.png" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
+                                                                <img src="images/v2.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
+                                                                <img src="images/v3.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
+                                                                <img src="images/v4.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item active">
+                                                            <a id="carousel-selector-4" data-slide-to="4" data-target="#myCarousel">
+                                                                <img src="images/v3.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-5" data-slide-to="5" data-target="#myCarousel">
+                                                                <img src="images/v2.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-6" data-slide-to="6" data-target="#myCarousel">
+                                                                <img src="images/v4.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-7" data-slide-to="7" data-target="#myCarousel">
+                                                                <img src="images/v1.png" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-8" data-slide-to="8" data-target="#myCarousel">
+                                                                <img src="images/v2.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-9" data-slide-to="9" data-target="#myCarousel">
+                                                                <img src="images/v3.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-10" data-slide-to="10" data-target="#myCarousel">
+                                                                <img src="images/v4.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a id="carousel-selector-11" data-slide-to="11" data-target="#myCarousel">
+                                                                <img src="images/v2.jpg" class="img-fluid">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="card" id="highlights">
+                                            <h4 class="card-header">Highlights</h4>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><i class="fa fa-car"></i> CAR Parking Facilities</li>
+                                                    <li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Air Condition</li>
+                                                    <li><i class="fa fa-university" aria-hidden="true"></i> Hall Facilities</li>
+                                                    <li><i class="fa fa-cutlery" aria-hidden="true"></i> Food Facilities</li>
+                                                    <li><i class="fa fa-glass" aria-hidden="true"></i> Bar/Drinks</li>
+                                                    <li><i class="fa fa-users"></i> 500 Person</li>
+                                                    <li><i class="fa fa-wheelchair" aria-hidden="true"></i> Disable access</li>
+                                                    <li><i class="fa fa-wifi" aria-hidden="true"></i> Free WIFI</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+            
+                                                            
+                                    <div class="card" id="price">
+                                            <h4 class="card-header">Hall Rental Price</h4>
+                                            <div class="card-body">
+                                                    Guest can bring outside food ( Veg &amp; Non Veg allowed ) <br>
+                                                    
+                                                    For Half Day ( Lunch / Dinner ): <strong>tk90000</strong>
+                                            </div>
+                                        </div>
+                                    
+                                    <div class="card" id="packages">
+                                        <h4 class="card-header">Packages</h4>
+                                        <div class="card-body">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Packages 1</td>
+                                                        <td>Packages 2</td>
+                                                        <td>Packages 3</td>
+                                                        <td>Packages 4</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                            <td>80</td>
+                                                            <td>300</td>
+                                                            <td>400</td>
+                                                            <td>400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>80</td>
+                                                            <td>300</td>
+                                                            <td>400</td>
+                                                            <td>400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>80</td>
+                                                            <td>300</td>
+                                                            <td>400</td>
+                                                            <td>400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a class="btn btn-warning">Details</a></td>
+                                                            <td><a class="btn btn-warning">Details</a></td>
+                                                            <td><a class="btn btn-warning">Details</a></td>
+                                                            <td><a class="btn btn-warning">Details</a></td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+            
+                                    <div class="card" id="facilities">
+                                        <h4 class="card-header">Facilities</h4>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><i class="fa fa-car"></i> CAR Parking Facilities</li>
+                                                <li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Air Condition</li>
+                                                <li><i class="fa fa-university" aria-hidden="true"></i> Hall Facilities</li>
+                                                <li><i class="fa fa-cutlery" aria-hidden="true"></i> Food Facilities</li>
+                                                <li><i class="fa fa-glass" aria-hidden="true"></i> Bar/Drinks</li>
+                                                <li><i class="fa fa-users"></i> 500 Person</li>
+                                                <li><i class="fa fa-wheelchair" aria-hidden="true"></i> Disable access</li>
+                                                <li><i class="fa fa-wifi" aria-hidden="true"></i> Free WIFI</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card" id="capacity">
+                                        <h4 class="card-header">Capacity</h4>
+                                        <div class="card-body">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Minimum</td>
+                                                        <td>Floating Capacity</td>
+                                                        <td>Maximum Seating</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>80</td>
+                                                        <td>300</td>
+                                                        <td>400</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" id="food">
+                                        <h4 class="card-header">Food and Drinks</h4>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" id="seat">
+                                        <h4 class="card-header">Seating Arrangements</h4>
+                                        <div class="card-body">
+                                            
+                                                <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Shape Name</td>
+                                                                <td>Theater</td>
+                                                                <td>Class</td>
+                                                                <td>Cluster</td>
+                                                                <td>UShape</td>
+                                                                <td>Board</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                    <td>Capacity</td>
+                                                                    <td>80</td>
+                                                                    <td>300</td>
+                                                                    <td>400</td>
+                                                                    <td>400</td>
+                                                                    <td>400</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Shape</td>
+                                                                    <td><img src="images/theatre-layout.png" alt=""></td>
+                                                                    <td><img src="images/class-layout.png" alt=""></td>
+                                                                    <td><img src="images/round-layout.png" alt=""></td>
+                                                                    <td><img src="images/u-layout.png" alt=""></td>
+                                                                    <td><img src="images/board-layout.png" alt=""></td>
+                                                                </tr>
+                                                        </tbody>
+                                                    </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" id="technology">
+                                        <h4 class="card-header">Technology &amp; Equipment</h4>
+                                        <div class="card-body">
+                                                <ul>
+                                                    <li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Air Condition</li>
+                                                    <li><i class="fa fa-wheelchair" aria-hidden="true"></i> Disable access</li>
+                                                    <li><i class="fa fa-wifi" aria-hidden="true"></i> Free WIFI</li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" id="about">
+                                        <h4 class="card-header">About</h4>
+                                        <div class="card-body">
+                                            <p>Check availabity online for Star Banquetes,Jayanagar 4th Block, Bangalore. Star Banquetes is a banquet hall located in Jayanagar 4th Block , Bangalore .The banquet hall seating capacity is 300 and floating up to 600 can manage.This venue has car parking facility also which can park up to 20 cars. Outside food allowed at this banquet hall.Events permitted at Star Banquetes are Engagement,Wedding Reception,Birthday Party,Get Together Party,Anniversary,Kitty Party,Naming Ceremony.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" id="suited">
+                                        <h4 class="card-header">Suited for</h4>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><i class="fa fa-tag"></i> Anniversary</li>
+                                                <li><i class="fa fa-tag"></i> Baby Shower</li>
+                                                <li><i class="fa fa-tag"></i> Bachelor Party</li>
+                                                <li><i class="fa fa-tag"></i> Baptism</li>
+                                                <li><i class="fa fa-tag"></i> Birthday Party</li>
+                                                <li><i class="fa fa-tag"></i> Engagement</li>
+                                                <li><i class="fa fa-tag"></i> Get-Together</li>
+                                                <li><i class="fa fa-tag"></i> Kitty Party</li>
+                                                <li><i class="fa fa-tag"></i> Naming Cermony</li>
+                                                <li><i class="fa fa-tag"></i> Reception</li>
+                                                <li><i class="fa fa-tag"></i> Sangeet</li>
+                                                <li><i class="fa fa-tag"></i> Upanayanam</li>
+                                                <li><i class="fa fa-tag"></i> Wedding / Marriage </li>
+                                                <li><i class="fa fa-tag"></i> Annual Function</li>
+                                                <li><i class="fa fa-tag"></i> Board Meetings</li>
+                                                <li><i class="fa fa-tag"></i> Exhibition</li>
+                                                <li><i class="fa fa-tag"></i> Seminars</li>
+                                                <li><i class="fa fa-tag"></i> Team Meeting</li>
+                                            </ul>  
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" id="distance">
+                                        <h4 class="card-header">Distance from</h4>
+                                        <div class="card-body">
+                                               <p><i class="fa fa-bus"></i> Nearest Bus Stop: NA</p> 
+                                               <p><i class="fa fa-train"></i> Nearest Railway Station: NA</p>
+                                               <p><i class="fa fa-plane"></i> Dhaka International Airport is 40.21 Km</p>
+                                               <p><i class="fa fa-subway"></i> Dhaka City subway Station is 9.28 Km</p>
+                                                
+                                                
+                                                
+                                                
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" id="policies">
+                                        <h4 class="card-header">Booking policies</h4>
+                                        <div class="card-body">
+                                            <p>
+                                                    Total Tax : 14.5 % is applicable on Food &amp; Beverages (F&amp;B) <br>
+                                                    Advance Amount : 50% of the estimated billing amount to be paid at the time of booking to confirm the venue and remaining amount need to be paid on the day of the event
+                                            </p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="card" id="calendars">
+                                        <h4 class="card-header">Event Calendar</h4>
+                                        <div class="card-body">
+                                            <div id="calendar" class="fc fc-unthemed fc-ltr"><div class="fc-toolbar fc-header-toolbar"><div class="fc-left"><div class="fc-button-group"><button type="button" class="fc-prev-button fc-button fc-state-default fc-corner-left"><span class="fc-icon fc-icon-left-single-arrow"></span></button><button type="button" class="fc-next-button fc-button fc-state-default fc-corner-right"><span class="fc-icon fc-icon-right-single-arrow"></span></button></div><button type="button" class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right">today</button></div><div class="fc-right"><div class="fc-button-group"><button type="button" class="fc-month-button fc-button fc-state-default fc-corner-left fc-state-active">month</button><button type="button" class="fc-basicWeek-button fc-button fc-state-default">week</button><button type="button" class="fc-basicDay-button fc-button fc-state-default fc-corner-right">day</button></div></div><div class="fc-center"><h2>November 2017</h2></div><div class="fc-clear"></div></div><div class="fc-view-container" style=""><div class="fc-view fc-month-view fc-basic-view" style=""><table class=""><thead class="fc-head"><tr><td class="fc-head-container fc-widget-header"><div class="fc-row fc-widget-header"><table class=""><thead><tr><th class="fc-day-header fc-widget-header fc-sun"><span>Sun</span></th><th class="fc-day-header fc-widget-header fc-mon"><span>Mon</span></th><th class="fc-day-header fc-widget-header fc-tue"><span>Tue</span></th><th class="fc-day-header fc-widget-header fc-wed"><span>Wed</span></th><th class="fc-day-header fc-widget-header fc-thu"><span>Thu</span></th><th class="fc-day-header fc-widget-header fc-fri"><span>Fri</span></th><th class="fc-day-header fc-widget-header fc-sat"><span>Sat</span></th></tr></thead></table></div></td></tr></thead><tbody class="fc-body"><tr><td class="fc-widget-content"><div class="fc-scroller fc-day-grid-container" style="overflow: hidden; height: 553px;"><div class="fc-day-grid fc-unselectable"><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 92px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-other-month fc-past" data-date="2017-10-29"></td><td class="fc-day fc-widget-content fc-mon fc-other-month fc-past" data-date="2017-10-30"></td><td class="fc-day fc-widget-content fc-tue fc-other-month fc-past" data-date="2017-10-31"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2017-11-01"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2017-11-02"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2017-11-03"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2017-11-04"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-other-month fc-past" data-date="2017-10-29"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-10-29&quot;,&quot;type&quot;:&quot;day&quot;}">29</a></td><td class="fc-day-top fc-mon fc-other-month fc-past" data-date="2017-10-30"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-10-30&quot;,&quot;type&quot;:&quot;day&quot;}">30</a></td><td class="fc-day-top fc-tue fc-other-month fc-past" data-date="2017-10-31"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-10-31&quot;,&quot;type&quot;:&quot;day&quot;}">31</a></td><td class="fc-day-top fc-wed fc-past" data-date="2017-11-01"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-01&quot;,&quot;type&quot;:&quot;day&quot;}">1</a></td><td class="fc-day-top fc-thu fc-past" data-date="2017-11-02"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-02&quot;,&quot;type&quot;:&quot;day&quot;}">2</a></td><td class="fc-day-top fc-fri fc-past" data-date="2017-11-03"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-03&quot;,&quot;type&quot;:&quot;day&quot;}">3</a></td><td class="fc-day-top fc-sat fc-past" data-date="2017-11-04"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-04&quot;,&quot;type&quot;:&quot;day&quot;}">4</a></td></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 92px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2017-11-05"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2017-11-06"></td><td class="fc-day fc-widget-content fc-tue fc-past" data-date="2017-11-07"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2017-11-08"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2017-11-09"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2017-11-10"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2017-11-11"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2017-11-05"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-05&quot;,&quot;type&quot;:&quot;day&quot;}">5</a></td><td class="fc-day-top fc-mon fc-past" data-date="2017-11-06"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-06&quot;,&quot;type&quot;:&quot;day&quot;}">6</a></td><td class="fc-day-top fc-tue fc-past" data-date="2017-11-07"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-07&quot;,&quot;type&quot;:&quot;day&quot;}">7</a></td><td class="fc-day-top fc-wed fc-past" data-date="2017-11-08"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-08&quot;,&quot;type&quot;:&quot;day&quot;}">8</a></td><td class="fc-day-top fc-thu fc-past" data-date="2017-11-09"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-09&quot;,&quot;type&quot;:&quot;day&quot;}">9</a></td><td class="fc-day-top fc-fri fc-past" data-date="2017-11-10"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-10&quot;,&quot;type&quot;:&quot;day&quot;}">10</a></td><td class="fc-day-top fc-sat fc-past" data-date="2017-11-11"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-11&quot;,&quot;type&quot;:&quot;day&quot;}">11</a></td></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 92px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2017-11-12"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2017-11-13"></td><td class="fc-day fc-widget-content fc-tue fc-past" data-date="2017-11-14"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2017-11-15"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2017-11-16"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2017-11-17"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2017-11-18"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2017-11-12"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-12&quot;,&quot;type&quot;:&quot;day&quot;}">12</a></td><td class="fc-day-top fc-mon fc-past" data-date="2017-11-13"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-13&quot;,&quot;type&quot;:&quot;day&quot;}">13</a></td><td class="fc-day-top fc-tue fc-past" data-date="2017-11-14"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-14&quot;,&quot;type&quot;:&quot;day&quot;}">14</a></td><td class="fc-day-top fc-wed fc-past" data-date="2017-11-15"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-15&quot;,&quot;type&quot;:&quot;day&quot;}">15</a></td><td class="fc-day-top fc-thu fc-past" data-date="2017-11-16"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-16&quot;,&quot;type&quot;:&quot;day&quot;}">16</a></td><td class="fc-day-top fc-fri fc-past" data-date="2017-11-17"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-17&quot;,&quot;type&quot;:&quot;day&quot;}">17</a></td><td class="fc-day-top fc-sat fc-past" data-date="2017-11-18"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-18&quot;,&quot;type&quot;:&quot;day&quot;}">18</a></td></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 92px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2017-11-19"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2017-11-20"></td><td class="fc-day fc-widget-content fc-tue fc-past" data-date="2017-11-21"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2017-11-22"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2017-11-23"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2017-11-24"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2017-11-25"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2017-11-19"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-19&quot;,&quot;type&quot;:&quot;day&quot;}">19</a></td><td class="fc-day-top fc-mon fc-past" data-date="2017-11-20"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-20&quot;,&quot;type&quot;:&quot;day&quot;}">20</a></td><td class="fc-day-top fc-tue fc-past" data-date="2017-11-21"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-21&quot;,&quot;type&quot;:&quot;day&quot;}">21</a></td><td class="fc-day-top fc-wed fc-past" data-date="2017-11-22"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-22&quot;,&quot;type&quot;:&quot;day&quot;}">22</a></td><td class="fc-day-top fc-thu fc-past" data-date="2017-11-23"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-23&quot;,&quot;type&quot;:&quot;day&quot;}">23</a></td><td class="fc-day-top fc-fri fc-past" data-date="2017-11-24"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-24&quot;,&quot;type&quot;:&quot;day&quot;}">24</a></td><td class="fc-day-top fc-sat fc-past" data-date="2017-11-25"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-25&quot;,&quot;type&quot;:&quot;day&quot;}">25</a></td></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 92px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2017-11-26"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2017-11-27"></td><td class="fc-day fc-widget-content fc-tue fc-past" data-date="2017-11-28"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2017-11-29"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2017-11-30"></td><td class="fc-day fc-widget-content fc-fri fc-other-month fc-past" data-date="2017-12-01"></td><td class="fc-day fc-widget-content fc-sat fc-other-month fc-past" data-date="2017-12-02"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2017-11-26"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-26&quot;,&quot;type&quot;:&quot;day&quot;}">26</a></td><td class="fc-day-top fc-mon fc-past" data-date="2017-11-27"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-27&quot;,&quot;type&quot;:&quot;day&quot;}">27</a></td><td class="fc-day-top fc-tue fc-past" data-date="2017-11-28"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-28&quot;,&quot;type&quot;:&quot;day&quot;}">28</a></td><td class="fc-day-top fc-wed fc-past" data-date="2017-11-29"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-29&quot;,&quot;type&quot;:&quot;day&quot;}">29</a></td><td class="fc-day-top fc-thu fc-past" data-date="2017-11-30"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-11-30&quot;,&quot;type&quot;:&quot;day&quot;}">30</a></td><td class="fc-day-top fc-fri fc-other-month fc-past" data-date="2017-12-01"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-01&quot;,&quot;type&quot;:&quot;day&quot;}">1</a></td><td class="fc-day-top fc-sat fc-other-month fc-past" data-date="2017-12-02"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-02&quot;,&quot;type&quot;:&quot;day&quot;}">2</a></td></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 93px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-other-month fc-past" data-date="2017-12-03"></td><td class="fc-day fc-widget-content fc-mon fc-other-month fc-past" data-date="2017-12-04"></td><td class="fc-day fc-widget-content fc-tue fc-other-month fc-past" data-date="2017-12-05"></td><td class="fc-day fc-widget-content fc-wed fc-other-month fc-past" data-date="2017-12-06"></td><td class="fc-day fc-widget-content fc-thu fc-other-month fc-past" data-date="2017-12-07"></td><td class="fc-day fc-widget-content fc-fri fc-other-month fc-past" data-date="2017-12-08"></td><td class="fc-day fc-widget-content fc-sat fc-other-month fc-past" data-date="2017-12-09"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-other-month fc-past" data-date="2017-12-03"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-03&quot;,&quot;type&quot;:&quot;day&quot;}">3</a></td><td class="fc-day-top fc-mon fc-other-month fc-past" data-date="2017-12-04"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-04&quot;,&quot;type&quot;:&quot;day&quot;}">4</a></td><td class="fc-day-top fc-tue fc-other-month fc-past" data-date="2017-12-05"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-05&quot;,&quot;type&quot;:&quot;day&quot;}">5</a></td><td class="fc-day-top fc-wed fc-other-month fc-past" data-date="2017-12-06"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-06&quot;,&quot;type&quot;:&quot;day&quot;}">6</a></td><td class="fc-day-top fc-thu fc-other-month fc-past" data-date="2017-12-07"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-07&quot;,&quot;type&quot;:&quot;day&quot;}">7</a></td><td class="fc-day-top fc-fri fc-other-month fc-past" data-date="2017-12-08"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-08&quot;,&quot;type&quot;:&quot;day&quot;}">8</a></td><td class="fc-day-top fc-sat fc-other-month fc-past" data-date="2017-12-09"><a class="fc-day-number" data-goto="{&quot;date&quot;:&quot;2017-12-09&quot;,&quot;type&quot;:&quot;day&quot;}">9</a></td></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div></div></div></td></tr></tbody></table></div></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="about" role="tabpanel">About</div>
+                            <div class="tab-pane fade" id="book" role="book">
+                                
+                                <!-- Pre-Booking -->
+                                <div class="vendors package-sec">
+                                        <br>
+                                        <h3 class="new-title-style">Pre-Booking</h3>
+                                        <br>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="inputEmail4" placeholder="Contact no">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" name="type" id="">
+                                                    <option value="">Event Type</option>
+                                                    <option value="">test</option>
+                                                    <option value="">test</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" name="type" id="">
+                                                    <option value="">Package</option>
+                                                    <option value="">test</option>
+                                                    <option value="">test</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="Address line 1">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Address line 2">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <select id="inputState" class="form-control">
+                                                        <option value="">Choose State</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-2">
+                                                    <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" placeholder="Note"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox"> Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Book now</button>
+                                        </form>
+                                    </div>
+                            </div>
+                            <div class="tab-pane fade" id="gallery" role="tabpanel">
+                                
+                                <div class="gallery-opt row">
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox="gallery" href="images/v1.png">
+                                                <img src="images/v1.png" class="img-fluid">
+                                            </a>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="videos" role="tabpanel">
+                                <div class="gallery-opt row">
+                                        <div class="col-lg-3">
+                                            <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=DNyKDI9pn0Q">
+                                                <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/DNyKDI9pn0Q/mqdefault.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=ui5x6_aI-hw">
+                                                <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/ui5x6_aI-hw/mqdefault.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=Y-UQPLigC0M">
+                                                <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/Y-UQPLigC0M/mqdefault.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=Ekp8A3HGp8I">
+                                                <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/Ekp8A3HGp8I/mqdefault.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=Ekp8A3HGp8I">
+                                                <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/Ekp8A3HGp8I/mqdefault.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=DNyKDI9pn0Q">
+                                                <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/DNyKDI9pn0Q/mqdefault.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=ui5x6_aI-hw">
+                                                <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/ui5x6_aI-hw/mqdefault.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=Y-UQPLigC0M">
+                                                <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/Y-UQPLigC0M/mqdefault.jpg" />
+                                            </a>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tnc" role="tnc">T&C</div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel">Contact</div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                        <div class="vendors-rigth-sec tab-body-opt">
+                                <!-- Contact No; Contact Person -->
+                                <div class="venue-right-contact">
+                                    <h5>
+                                        Manager: full Name
+                                    </h5>
+                                </div>
+                                <!-- 2. Rating: Upto 5 Star - Submit your's review (Dynamic) -->
+                            <div class="venue-right-con-sec">
+
+                                <div class="vendors rating-sec">
+                                    <h3 class="new-title-style">Rating: 5 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i> 
+                                    </h3>
+                                    <div class="review">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="images/profile.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <p class="name">Mr. User Name | Rating: 4.9
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i> 
+                                                </p>
+                                                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis, tenetur reprehenderit, repellat harum earum sed rerum.</i></p>
+                                                <i><p class="replay-count">2 replay</p></i>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="replay">
+                                        <div class="row">
+                                            <div class="col-lg-2"></div>
+                                            <div class="col-lg-2">
+                                                <img src="images/profile.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p class="name">Mr. User Name</p>
+                                                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis, tenetur reprehenderit, repellat harum earum sed rerum.</i></p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-2"></div>
+                                            <div class="col-lg-2">
+                                                <img src="images/profile.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p class="name">Mr. User Name</p>
+                                                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis, tenetur reprehenderit, repellat harum earum sed rerum.</i></p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4"></div>
+                                            <div class="col-lg-8">
+                                                <div class="row">
+                                                    <div class="col-lg-9">
+                                                        <textarea name="replay" class="form-control" id="replay" cols="30" rows="1" placeholder="Replay"></textarea>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <a href="#" class="btn btn-danger float-right">Send</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        
+                                    </div>
+                                    
+                                    <div class="review">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="images/profile.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <p class="name">Mr. User Name | Rating: 4
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </p>
+                                                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis, tenetur reprehenderit, repellat harum earum sed rerum.</i></p>
+                                                <i><p class="replay-count">no replay</p></i>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="2" placeholder="Review us"></textarea>
+                                    <p class="name">Rate us:
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i> 
+                                        </p>
+                                    <a href="#" class="btn btn-danger btn-block">Submit your's review</a>
+                                </div>
+                                
+                            </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- footer section -->
+            <footer>
+                <div class="footer-opt">
+                    <div class="container">
+                        <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  <h3>ABOUT US</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illum soluta quis voluptatibus tenetur aspernatur. 
+                    Dolore et maxime numquam doloremque aut nihil commodi, laborum, sint incidunt, molestiae officiis necessitatibus ipsa!</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h3>FOR MORE INFO VISIT</h3>
+                  <ul>
+                        <li><a href="how-it-work.html">How it works</a></li>
+                        <li><a href="site-map.html">Sitemap</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="ads.html">Advertise</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+  
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h3>EXPLORE VENUES</h3>
+                  <ul>
+                      <li><a href="#">Business Hall</a></li>
+                      <li><a href="#">Family Hall</a></li>
+                      <li><a href="#">Weding Hall</a></li>
+                      <li><a href="#">Party Hall</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h3>SUBSCRIBE</h3>
+                  <p>
+                      Subscribe to our newsletter and stay up to date with the latest offers at venue
+                  </p>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                      <button class="btn btn-danger" type="button">SUBSCRIBE</button>
+                    </span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>&copy; copyright - 2017 | ALL Rights Reserved. <a href="#">Privacy Policy</a> <a href="#">Terms of Service</a></p>
+                </div>
+                <div class="col-md-6">
+                  
+                </div>
+                
+              </div>
+            </div>
+        </div>
+      </footer>
+  
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendors/jquery/jquery.min.js" ></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    
+    <script src="vendors/js/bootstrap.min.js" ></script>
+
+    <!-- custome js -->
+    <script src="js/main.js"></script>
+
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel();
+        $('.view-hall-list').click(function(){
+            console.log("clicked to view hall list of this venue")
+            $(this).slideToggle();
+        });
+      });
+    </script>
+    <script src="js/fullcalendar.min.js"></script>
+
+    <script>
+            
+                $(document).ready(function() {
+                    
+                    $('#calendar').fullCalendar({
+                        header: {
+                            left: 'prev,next today',
+                            center: 'title',
+                            right: 'month,basicWeek,basicDay'
+                        },
+                        defaultDate: '2017-11-01',
+                        navLinks: true, // can click day/week names to navigate views
+                        editable: true,
+                        eventLimit: true, // allow "more" link when too many events
+                        events: {
+                            url: 'js/data.php'
+                        }
+                        
+                    });
+                    
+                });
+            
+            </script>
+
+
+  </body>
+</html>
