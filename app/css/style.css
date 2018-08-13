@@ -790,12 +790,12 @@ span.or-sec p {
   position: absolute;
   z-index: 1;
   background: rgba(255, 0, 0, 0.5);
-  height: 100px;
-  width: 100px;
-  -webkit-border-radius: 0px 0px 100% 0px;
-  border-radius: 0px 0px 100% 0px; }
+  height: 40px;
+  width: 75px;
+  -webkit-border-radius: 0px 0px 35px 0px;
+  border-radius: 0px 0px 35px 0px; }
   .venue-list .card-highlight span {
-    padding: 25px;
+    padding: 8px 15px;
     color: #fff;
     font-size: 15px;
     font-weight: bold;
@@ -806,15 +806,18 @@ span.or-sec p {
 .venue-list .footer-sec {
   padding: 15px;
   padding-top: 0px; }
-  .venue-list .footer-sec .price {
-    font-size: 22px;
-    padding: 3px 0;
+  .venue-list .footer-sec .halls {
+    font-size: 18px;
+    padding: 2px 0;
     font-weight: bold;
     color: #333333; }
 
 .venue-list:hover .venues {
   background: #ccc !important; }
-  .venue-list:hover .venues .card-img {
+  .venue-list:hover .venues .card-img img {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
     opacity: .5; }
   .venue-list:hover .venues .card-body a {
     color: #111;
@@ -829,6 +832,31 @@ span.or-sec p {
     color: #777777; }
   .venue-list .venues img {
     width: 100%; }
+  .venue-list .venues .card-img {
+    background: #ff5f5f;
+    position: relative;
+    overflow: hidden; }
+    .venue-list .venues .card-img img {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+  .venue-list .venues a.venue-name {
+    padding: 10px 15px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 0, 0, 0.5);
+    right: 0;
+    left: 0;
+    color: #fff; }
+    .venue-list .venues a.venue-name h3 {
+      font-size: 15px;
+      margin: 0px;
+      padding: 0px; }
+    .venue-list .venues a.venue-name .fa {
+      color: #fff; }
   .venue-list .venues .card-body a {
     color: #333333;
     text-decoration: none; }

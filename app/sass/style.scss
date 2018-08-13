@@ -1001,11 +1001,11 @@ span.or-sec p {
         position: absolute;
         z-index: 1;
         background: rgba(255, 0, 0, 0.5);
-        height: 100px;
-        width: 100px;
-        border-radius: 0px 0px 100% 0px;
+        height: 40px;
+        width: 75px;
+        border-radius: 0px 0px 35px 0px;
         span{
-            padding: 25px;
+            padding: 8px 15px;
             color: #fff;
             font-size: 15px;
             font-weight: bold;
@@ -1018,9 +1018,9 @@ span.or-sec p {
     .footer-sec{
         padding: 15px;
         padding-top: 0px;
-        .price{
-            font-size: 22px;
-            padding: 3px 0;
+        .halls{
+            font-size: 18px;
+            padding: 2px 0;
             font-weight: bold;
             color: #333333;
         }
@@ -1028,7 +1028,9 @@ span.or-sec p {
     &:hover{
         .venues{
             background: #ccc !important;
-            .card-img{
+            .card-img img{
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
                 opacity: .5;
             }
             .card-body{
@@ -1050,7 +1052,35 @@ span.or-sec p {
         img{
             width: 100%;
         }
-        
+        .card-img{
+            background: #ff5f5f;
+            position: relative;
+            overflow: hidden;
+            img{
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+            }
+        }
+        a.venue-name {
+            h3{
+                font-size: 15px;
+                margin: 0px;
+                padding: 0px;
+            }
+            padding: 10px 15px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            background: rgba(255, 0, 0, 0.5);
+            right: 0;
+            left: 0;
+            color: #fff;
+            .fa{
+                color: #fff;
+            }
+        }
         .card-body{
             a{
                 color: #333333;
