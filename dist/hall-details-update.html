@@ -77,7 +77,7 @@
             <br>
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="venue-left-panel tab-body-opt">
+                    <div class="venue-left-panel tab-body-opt sticker">
                         <div class="venue-left-contact">
                             <!-- <h3 class="opt-title">Talk to Venue Manager</h3> -->
                             <h5><i class="fa fa-phone"></i> Call now: 08030752877</h5>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="tab-body-opt">
+                    <div class="tab-body-opt sidebar-item">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#home">Hall List</a>
@@ -673,7 +673,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                        <div class="vendors-rigth-sec tab-body-opt">
+                        <div class="vendors-rigth-sec tab-body-opt sticker">
                                 <!-- Contact No; Contact Person -->
                                 <div class="venue-right-contact">
                                     <h5>
@@ -874,6 +874,31 @@
       });
     </script>
     <script src="js/fullcalendar.min.js"></script>
+
+        
+    <script src="js/sticky.js"></script>
+    <script src="vendors/js/wow.min.js" ></script>
+    <script src="vendors/js/scroll.min.js" ></script>
+
+
+    <script>
+      wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:  100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+      );
+      wow.init();
+
+      $(document).ready(function(){
+        $(".sticker").sticky({topSpacing:0, bottomSpacing:365});
+      });
+
+    </script>
+
 
     <script>
             

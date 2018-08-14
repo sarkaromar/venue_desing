@@ -1250,7 +1250,9 @@ span.or-sec p {
   border-radius: 15px; }
 
 footer {
-  background: #333333; }
+  background: #333333;
+  position: -webkit-sticky;
+  position: sticky; }
   footer .footer-opt {
     padding: 45px 0; }
     footer .footer-opt h3 {
